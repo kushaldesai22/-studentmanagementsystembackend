@@ -36,8 +36,8 @@ public class StudentController {
     @DeleteMapping("/student/{id}")
     public List<Student> deleteStudent(@PathVariable Integer id){
         for(int i=0; i< students.size(); i++){
-            // if(students.get(i).getId()==id){
             if(students.get(i).getId()==id){
+            // if(students.get(i).getId()==id){
                 students.remove(i);
             }
         }
